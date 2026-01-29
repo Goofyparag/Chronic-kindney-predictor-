@@ -1,12 +1,10 @@
 Chronic Kidney Disease Prediction System
 
-A machine learning–based web application designed to predict Chronic Kidney Disease (CKD) using clinical and medical parameters. The system integrates data preprocessing, model training, and deployment through a Flask web interface.
+A machine learning–based web application that predicts the presence of Chronic Kidney Disease (CKD) using clinical and medical parameters. The project demonstrates the complete pipeline from data preprocessing and model training to deployment using a Flask web application.
 
-📌 Project Description
+📌 Project Overview
 
-Chronic Kidney Disease is a long-term condition that can lead to kidney failure if not detected early. This project applies supervised machine learning techniques to analyze patient medical data and predict the presence of CKD.
-
-The application enables users to input clinical values and receive an instant prediction, demonstrating the practical use of machine learning in healthcare analytics.
+Chronic Kidney Disease is a long-term medical condition that can lead to kidney failure if not detected early. This project leverages supervised machine learning algorithms to analyze patient health data and provide accurate predictions, helping in early diagnosis and decision support.
 
 🎯 Objectives
 
@@ -14,11 +12,11 @@ Analyze and preprocess real-world medical data
 
 Train and evaluate machine learning classification models
 
-Save and reuse trained models
+Save trained models for reuse
 
 Deploy the model using a Flask web application
 
-Provide a simple and user-friendly prediction interface
+Demonstrate a real-world healthcare analytics use case
 
 🧠 Technologies Used
 
@@ -30,24 +28,24 @@ Web Framework: Flask
 
 Data Analysis: Pandas, NumPy
 
-Model Serialization: Joblib / Pickle
+Model Serialization: Pickle / Joblib
 
-Development Tools: Jupyter Notebook
+Development Environment: Jupyter Notebook
 
 📂 Project Structure
 Chronic-kindney-predictor-/
 │
-├── .ipynb_checkpoints/               # Jupyter checkpoints
-├── model/                            # Saved trained model(s)
+├── .ipynb_checkpoints/                 # Jupyter notebook checkpoints
+├── model/                              # Saved trained model(s)
 ├── Train, Testing, Saving Models Code.ipynb
-├── kidney_disease.csv                # Dataset
-├── app.py                            # Flask application
-├── requirements.txt                  # Project dependencies
-└── README.md                         # Project documentation
+├── kidney_disease.csv                  # Dataset
+├── app.py                              # Flask application
+├── requirements.txt                    # Project dependencies
+└── README.md                           # Project documentation
 
-📊 Dataset Information
+📊 Dataset Description
 
-The dataset (kidney_disease.csv) contains multiple clinical features such as:
+The dataset (kidney_disease.csv) contains clinical and diagnostic features, including but not limited to:
 
 Age
 
@@ -67,42 +65,41 @@ Packed Cell Volume
 
 Red Blood Cell Count
 
-These features are used to classify whether a patient has Chronic Kidney Disease or not.
+These features are used to classify whether a patient has Chronic Kidney Disease.
 
-⚙️ Workflow
-
-Data Preprocessing
+⚙️ System Workflow
+1. Data Preprocessing
 
 Handling missing values
 
-Encoding categorical features
+Encoding categorical variables
 
-Feature scaling
+Feature scaling and cleaning
 
-Model Training
+2. Model Training
 
-Train machine learning classification models
+Training machine learning classification models
 
-Evaluate performance using accuracy metrics
+Evaluating performance using accuracy metrics
 
-Select and save the best-performing model
+Saving the best-performing model
 
-Model Deployment
+3. Model Deployment
 
-Load the trained model in Flask
+Loading the trained model in Flask
 
-Accept user input through a web interface
+Accepting user inputs via web interface
 
-Return prediction results in real time
+Returning prediction results in real time
 
-🚀 Installation & Execution
+🚀 Installation and Execution
 Step 1: Clone the Repository
 git clone https://github.com/Goofyparag/Chronic-kindney-predictor-.git
 cd Chronic-kindney-predictor-
 
-Step 2: Create Virtual Environment (Optional but Recommended)
+Step 2: Create a Virtual Environment (Recommended)
 python -m venv venv
-venv\Scripts\activate   # Windows
+venv\Scripts\activate   # For Windows
 
 Step 3: Install Dependencies
 pip install -r requirements.txt
@@ -111,33 +108,31 @@ Step 4: Run the Application
 python app.py
 
 
-The application will run on:
+The application will run at:
 
 http://127.0.0.1:5000/
 
-🧪 Sample Output
-
-Input: Patient medical parameters
-
-Output:
+🧪 Output
 
 CKD Detected
 
 No CKD Detected
 
+The prediction is based on the input medical parameters provided by the user.
+
 📌 Use Cases
 
-Academic mini / major project
+College Mini / Major Project
 
-Machine learning portfolio project
+Machine Learning Portfolio Project
 
-Healthcare analytics demonstration
+Healthcare Analytics Demonstration
 
-Flask + ML deployment example
+Flask + ML Deployment Example
 
 ⚠️ Disclaimer
 
-This project is developed for educational purposes only.
+This project is intended for educational purposes only.
 It should not be used as a substitute for professional medical diagnosis or treatment.
 
 👤 Author
@@ -145,7 +140,7 @@ It should not be used as a substitute for professional medical diagnosis or trea
 Parag Tiwari
 GitHub: https://github.com/Goofyparag
 
-⭐ Acknowledgment
+⭐ Acknowledgements
 
 UCI Machine Learning Repository
 
